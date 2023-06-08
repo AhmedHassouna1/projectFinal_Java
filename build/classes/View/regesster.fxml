@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="638.0" style="-fx-background-color: #e3f2fd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegessterController">
+   <children>
+      <AnchorPane layoutX="-10.0" prefHeight="607.0" prefWidth="200.0" style="-fx-background-color: #90caf9; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="12.0" layoutY="108.0" prefHeight="31.0" prefWidth="176.0" text="Admin Dashbord">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="114.0" layoutY="520.0" mnemonicParsing="false" onAction="#btn_backe" prefHeight="42.0" prefWidth="39.0" style="-fx-background-color: #90caf9;" textFill="#4a4a4a00">
+               <font>
+                  <Font name="Arial" size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0">
+                     <image>
+                        <Image url="@../image/585-5857042_logout-icon-png-transparent-png-removebg-preview%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="132.0" fitWidth="186.0" layoutX="14.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/png-clipart-faridabad-hospital-health-facility-building-building-hospital-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="242.0" layoutY="69.0" prefHeight="31.0" prefWidth="241.0" text="Patient Login page" textFill="#0000009e">
+         <font>
+            <Font name="Arial Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="225.0" layoutY="113.0" prefHeight="480.0" prefWidth="392.0" style="-fx-background-color: #fafafa; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="20.0" layoutY="51.0" prefHeight="31.0" prefWidth="107.0" text="User Name :">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserName" layoutX="164.0" layoutY="53.0" style="-fx-border-color: #212121;" />
+            <Label layoutX="20.0" layoutY="82.0" prefHeight="31.0" prefWidth="107.0" text="Password :">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="129.0" prefHeight="31.0" prefWidth="115.0" text="First Name ">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFirstName" layoutX="14.0" layoutY="160.0" prefHeight="27.0" prefWidth="125.0" style="-fx-border-color: #212121;" />
+            <Label layoutX="172.0" layoutY="129.0" prefHeight="31.0" prefWidth="115.0" text="Last Name ">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLastName" layoutX="154.0" layoutY="160.0" style="-fx-border-color: #212121;" />
+            <Label layoutX="325.0" layoutY="129.0" prefHeight="31.0" prefWidth="52.0" text="Age ">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAge" layoutX="325.0" layoutY="160.0" prefHeight="27.0" prefWidth="32.0" style="-fx-border-color: #212121;" />
+            <Label layoutX="19.0" layoutY="209.0" prefHeight="31.0" prefWidth="72.0" text="Email :">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" layoutX="92.0" layoutY="209.0" prefHeight="27.0" prefWidth="213.0" style="-fx-border-color: #212121;" />
+            <Label layoutX="19.0" layoutY="256.0" prefHeight="31.0" prefWidth="72.0" text="Phone :">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPhone" layoutX="92.0" layoutY="258.0" prefHeight="27.0" prefWidth="213.0" style="-fx-border-color: #212121;" />
+            <Label layoutX="14.0" layoutY="311.0" prefHeight="31.0" prefWidth="72.0" text="Gender">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="radioMale" layoutX="122.0" layoutY="316.0" mnemonicParsing="false" selected="true" text="Male">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="genderGroub" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radioFemale" layoutX="220.0" layoutY="316.0" mnemonicParsing="false" text="Female" toggleGroup="$genderGroub">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="19.0" layoutY="359.0" prefHeight="31.0" prefWidth="72.0" text="Role">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="radioUser" layoutX="127.0" layoutY="364.0" mnemonicParsing="false" selected="true" text="patient">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="rolGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radioAdmin" layoutX="225.0" layoutY="364.0" mnemonicParsing="false" text="admin" toggleGroup="$rolGroup">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </RadioButton>
+            <Button layoutX="39.0" layoutY="413.0" mnemonicParsing="false" onAction="#btn_Save" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #81d4fa; -fx-border-color: #2962ff; -fx-border-radius: 10;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="240.0" layoutY="413.0" mnemonicParsing="false" onAction="#btn_Cancel" prefHeight="22.0" prefWidth="97.0" style="-fx-background-color: #ffab91; -fx-border-color: #ff1744; -fx-border-radius: 10;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="PasswordID" layoutX="165.0" layoutY="85.0" style="-fx-border-color: #212121;" />
+            <Button layoutX="139.0" layoutY="429.0" mnemonicParsing="false" onAction="#btn_Update" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #81d4fa; -fx-border-color: #2962ff; -fx-border-radius: 10;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="ID__ID" layoutX="325.0" layoutY="245.0" prefHeight="27.0" prefWidth="32.0" style="-fx-background-color: #fafafa; -fx-text-fill: #fafafa;" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="104.0" fitWidth="125.0" layoutX="502.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/png-transparent-physician-lia-doctor-of-medicine-doctors-and-nurses-miscellaneous-photography-service-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

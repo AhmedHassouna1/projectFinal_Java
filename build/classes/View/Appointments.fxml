@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="595.0" prefWidth="698.0" style="-fx-background-color: #e3f2fd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AppointmentsController">
+   <children>
+      <AnchorPane layoutX="-12.0" prefHeight="602.0" prefWidth="200.0" style="-fx-background-color: #90caf9; -fx-background-radius: 15;">
+         <children>
+            <Button layoutX="23.0" layoutY="248.0" mnemonicParsing="false" onAction="#btn_AdminPage" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: #e3f2fd; -fx-background-radius: 10;" text="Admin Page ">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="23.0" layoutY="301.0" mnemonicParsing="false" onAction="#btn_Appo" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: #e3f2fd; -fx-background-radius: 10;" text="Appointment Page">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="37.0" layoutY="48.0" prefHeight="25.0" prefWidth="153.0" text="Admin Dashboard" textFill="#00000090">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="3.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/png-clipart-faridabad-hospital-health-facility-building-building-hospital-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="23.0" layoutY="354.0" mnemonicParsing="false" onAction="#btn_booked" prefHeight="32.0" prefWidth="163.0" style="-fx-background-color: #e3f2fd; -fx-background-radius: 10;" text="Booked Appointment">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="199.0" layoutY="101.0" prefHeight="486.0" prefWidth="481.0" style="-fx-background-color: #f1f8e9; -fx-background-radius: 20;">
+         <children>
+            <Label alignment="CENTER" layoutX="37.0" layoutY="169.0" prefHeight="32.0" prefWidth="61.0" style="-fx-background-color: #ffebee; -fx-background-radius: 10;" text="Data" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dataID" layoutX="122.0" layoutY="173.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Data" style="-fx-background-color: #ffebee;" />
+            <Label alignment="CENTER" layoutX="37.0" layoutY="228.0" prefHeight="32.0" prefWidth="61.0" style="-fx-background-color: #ffebee; -fx-background-radius: 10;" text="Day" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dayID" layoutX="122.0" layoutY="230.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Day" style="-fx-border-color: #ffebee;" />
+            <Label alignment="CENTER" layoutX="37.0" layoutY="289.0" prefHeight="32.0" prefWidth="61.0" style="-fx-background-color: #ffebee; -fx-background-radius: 10;" text="Time" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="timeID" layoutX="122.0" layoutY="292.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Time" style="-fx-border-color: #ffebee;" />
+            <Label alignment="CENTER" layoutX="37.0" layoutY="336.0" prefHeight="32.0" prefWidth="61.0" style="-fx-background-color: #ffebee; -fx-background-radius: 10;" text="Status" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="statID" layoutX="122.0" layoutY="336.0" prefHeight="25.0" prefWidth="174.0" promptText="Enter Status ('free':::'booked')" style="-fx-border-color: #ffebee;" />
+            <Button layoutX="252.0" layoutY="407.0" mnemonicParsing="false" onAction="#Update" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #90caf9; -fx-background-radius: 10;" text="Update">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="364.0" layoutY="407.0" mnemonicParsing="false" onAction="#btn_Cancel" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #ff7043; -fx-background-radius: 10;" text="Cancel">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="168.0" fitWidth="163.0" layoutX="311.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/kisspng-physician-medicine-medical-laboratory-patient-doct-female-doctor-5b1588cacab055.0058352815281379308302-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="111.0" layoutY="64.0" prefHeight="32.0" prefWidth="174.0" text="Enter The Data" textFill="#c27e7eab">
+               <font>
+                  <Font name="Microsoft Uighur" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="317.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/H7ee4a30f0ccb4632bf2d6ac3e281aefdN-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="464.0" prefHeight="17.0" prefWidth="108.0" text="eng-ahme damer" textFill="#00000089">
+               <font>
+                  <Font name="Andalus" size="12.0" />
+               </font>
+            </Label>
+            <Button layoutX="146.0" layoutY="407.0" mnemonicParsing="false" onAction="#btn_Save" prefHeight="32.0" prefWidth="88.0" style="-fx-background-color: #90caf9; -fx-background-radius: 10;" text="Save">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="id_id" layoutX="122.0" layoutY="129.0" prefHeight="25.0" prefWidth="174.0" style="-fx-text-fill: #f1f8e9; -fx-background-color: #f1f8e9;" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="100.0" fitWidth="184.0" layoutX="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/png-transparent-medical-background-doctors-medical-see-a-doctor-thumbnail-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="174.0" layoutX="554.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/png-transparent-physician-lia-doctor-of-medicine-doctors-and-nurses-miscellaneous-photography-service-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="363.0" layoutY="66.0" prefHeight="32.0" prefWidth="183.0" text="Appointment registration" textFill="#00000090">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

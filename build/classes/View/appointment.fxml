@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="701.0" style="-fx-background-color: #e3f2fd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AppointmentController">
+   <children>
+      <AnchorPane layoutX="-8.0" prefHeight="613.0" prefWidth="190.0" style="-fx-background-color: #90caf9; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="16.0" layoutY="36.0" prefHeight="40.0" prefWidth="158.0" text="Admin Dashboard" textFill="#00000082">
+               <font>
+                  <Font name="Arial Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="26.0" layoutY="264.0" mnemonicParsing="false" onAction="#btn_adminPage" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: #e3f2fd; -fx-background-radius: 10;" text="Admin Page ">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="315.0" mnemonicParsing="false" onAction="#btn_AppoPage" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: #e3f2fd; -fx-background-radius: 10;" text="Appointment Page">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-1.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/png-clipart-faridabad-hospital-health-facility-building-building-hospital-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="16.0" layoutY="360.0" mnemonicParsing="false" onAction="#btn_booked" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: #e3f2fd; -fx-background-radius: 10;" text="Booked Appointment">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="198.0" layoutY="98.0" prefHeight="479.0" prefWidth="493.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <TableView fx:id="tabel_Appo" layoutX="47.0" layoutY="129.0" prefHeight="200.0" prefWidth="366.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="37.0" text="ID" />
+                <TableColumn fx:id="appointment_date" prefWidth="69.0" text="Date" />
+                  <TableColumn fx:id="appointment_day" prefWidth="87.0" text="Day" />
+                  <TableColumn fx:id="appointment_time" prefWidth="87.0" text="Time" />
+                  <TableColumn fx:id="status" prefWidth="87.0" text="Status" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="110.0" fitWidth="120.0" layoutX="369.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/H7ee4a30f0ccb4632bf2d6ac3e281aefdN-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="26.0" layoutY="79.0" mnemonicParsing="false" onAction="#btn_ShowApp" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #ffebee; -fx-background-radius: 10;" text="+ Show Appointments +">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="128.0" layoutY="343.0" mnemonicParsing="false" onAction="#btn_NewApp" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #e3f2fd; -fx-background-radius: 10;" text="+ New Appointments ">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="128.0" layoutY="388.0" mnemonicParsing="false" onAction="#btn_UpdateAppo" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #e3f2fd; -fx-background-radius: 10;" text="Update Appointments ">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="128.0" layoutY="427.0" mnemonicParsing="false" onAction="#btn_DeleteAppo" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #ff7043; -fx-background-radius: 10;" text="Delete Appointments ">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="95.0" fitWidth="99.0" layoutX="561.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/png-transparent-physician-lia-doctor-of-medicine-doctors-and-nurses-miscellaneous-photography-service-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="184.0" layoutX="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/png-transparent-medical-background-doctors-medical-see-a-doctor-thumbnail-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="366.0" layoutY="58.0" prefHeight="40.0" prefWidth="158.0" text="Appointments Page">
+         <font>
+            <Font name="Arial Bold Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
